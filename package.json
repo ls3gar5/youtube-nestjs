@@ -1,10 +1,10 @@
 {
   "name": "youtube-nestjs",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "author": "LS",
   "private": true,
-  "license": "UNLICENSED",
+  "license": "LS S.A.",
   "scripts": {
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
