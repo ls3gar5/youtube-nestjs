@@ -7,6 +7,6 @@ export class AppService {
   }
 
   getUsers(): string [] {
-    return ['Leo1'];
+    return ['Leo1', 'Javier', 'Jose'];
   }
 }

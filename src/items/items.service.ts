@@ -1,11 +1,16 @@
 import { Injectable } from '@nestjs/common';
 import { CreateItemDto } from './dto/create-item.dto';
 import { UpdateItemDto } from './dto/update-item.dto';
+import { error } from 'console';
+import { isEmpty } from 'lodash';
 
 @Injectable()
 export class ItemsService {
   create(createItemDto: CreateItemDto): string {
     const itemplain = JSON.stringify(createItemDto);
+    if(createItemDto! && isEmpty(createItemDto.name)) {
+      throw new error('the name is empty');
+    }
     return `This action returns a news ${itemplain} item`;
   }
 
