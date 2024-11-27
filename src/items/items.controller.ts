@@ -10,7 +10,9 @@ export class ItemsController {
   @Post()
   @HttpCode(201)
   create(@Body() createItemDto: CreateItemDto) {
-    return this.itemsService.create(createItemDto);
+    const item = new CreateItemDto({ id: createItemDto.id, name: createItemDto.name});
+    console.log(item);
+    return this.itemsService.create(item);
   }
 
   @Get()

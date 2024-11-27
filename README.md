@@ -27,9 +27,12 @@
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
 ## Project setup
-
+Requeriment:
+Nvm: 1.1.7
+Node: 20.16.0
+Nest: 10.4.8
 ```bash
-$ npm install
+$ npm ci
 ```
 
 ## Compile and run the project

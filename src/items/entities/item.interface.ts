@@ -1,6 +1,5 @@
-
-export class Item implements ProductInterface {
+interface ProductInterface {
     id: number;
     name: string;
     productDescrip?: string;
-}
+  }
